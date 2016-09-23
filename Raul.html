@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Actividad 9</title>
+<style>
+	h1{text-align:center;}
+</style>
+<script type="text/javascript">
+function a9(){
+	var paises = ["FRANCIA","ALEMANIA","ITALIA","PORTUGAL","GRAN BRETAÑA","IRLANDA","SUECIA","NORUEGA","FINLANDIA","DINAMARCA"];
+	var capitales = ["PARIS","BERLIN","ROMA","LISBOA","LONDRES","DUBLIN","ESTOCOLMO","OSLO","HELSINKI","COPENHAGUE"];
+	var cont=0;
+	for (var i=0;i<10;i++)
+	{
+	 var capital = prompt("Adivina la capital de "+paises[i]);
+	 capital=capital.toUpperCase();
+	 if (capital==capitales[i])
+		{alert("ZORIONAK");
+		 cont++;}
+	 else
+		{alert("OOOOH. La capital de "+paises[i]+" es "+capitales[i]);}
+	}
+	alert ("Has acertado "+cont+" capitales");
+	
+}
+</script>
+</head>
+<body onload="a9()">
+<h1>ACTIVIDAD JAVASCRIPT 9</h1>
+</body>
+</html>
